@@ -8,6 +8,36 @@
     <meta name="keywords" content="HTML, CSS, JS, Bootstrap">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+       <!-- Estilos CSS -->
+       <style>
+        /* Cambiar el cursor al pasar sobre la sección .myclass */
+        .myclass {
+            padding: 50px;
+            background-color: #f2f2f2;
+            text-align: center;
+            cursor: url('./images/cursor-personalizado.png'), auto; /* Usando una imagen personalizada */
+        }
+
+        /* Cambiar el cursor al pasar sobre el h1 */
+        h1 {
+            cursor: url('./images/cursor-personalizado.png'), pointer; /* Cursor personalizado y después la mano para el h1 */
+        }
+
+        /* Cambiar el cursor al pasar sobre el botón */
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: url('./images/cursor.png'), pointer; /* Usando la imagen personalizada para el botón */
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Cambia el color del botón cuando se pasa el mouse sobre él */
+        }
+    </style>
+
     <!-- Open Graph -->
     <meta property="og:title" content="Mi perfil">
     <meta property="og:description" content="Conoce mis proyectos y habilidades como licenciada en informática.">
@@ -66,8 +96,8 @@
     <section class="myclass aling-items-stretch">
         <div class="myclass-main d-flex flex-column justify-content-center aling-items-center">
             <img class="myclass-pic rounded-circle" src="./images/perfil2.png" alt="My selfie">
-            <h1> class = "titulo-principal" > Hola, soy Nely</h1> <!--Tipografia-->
-            <h2> class = "titulo-secundario"> Licenciada en informática en proceso ❤️</h2>   <!--Tipografia-->
+            <h1> Hola, soy Nely</h1> <!--Tipografia-->
+            <h2> Licenciada en informática en proceso ❤️</h2>   <!--Tipografia-->
         </div>
         <div class="myclass-label">            
             <img class="myclass-imagen img-fluid" src="./images/undraw_favorite_nvoi.svg" alt="think twice code once">
@@ -89,6 +119,8 @@
             </p>
         </div>
     </section>
+
+
 
     <!-- Experience -->
     <section class="experiencia section-clara">
