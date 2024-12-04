@@ -173,8 +173,12 @@ section {
     justify-content: center;    
 }
 
+
+/* Modificar el tamaño y estilo de los títulos */
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Título principal más grande */
+    font-weight: bold;
+    color: var(--color_1); /* Usar un color personalizado */
 }
 
 .btn-info {
