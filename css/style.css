@@ -174,11 +174,10 @@ section {
 }
 
 
-/* Modificar el tamaño y estilo de los títulos */
-h1 {
-    font-size: 3rem; /* Título principal más grande */
-    font-weight: bold;
-    color: var(--color_1); /* Usar un color personalizado */
+.myclass-main h1 {
+    font-family: 'Verdana', 'Arial', sans-serif; /* Verdana, si no está disponible, se usará Arial, y si no, cualquier fuente sans-serif */
+    font-size: 3rem; /* Tamaño de fuente para h1 */
+    font-weight: bold; /* Hacer la fuente más gruesa */
 }
 
 .btn-info {
