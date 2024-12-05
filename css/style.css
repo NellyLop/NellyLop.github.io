@@ -112,6 +112,7 @@
     margin: 5px;
 }
 
+
 .proyectos {
     padding: 40px;
 }
@@ -178,6 +179,7 @@ h1 {
 
 /* Aplica Playfair Display a todo el cuerpo de la página */
 body {
+    cursor: url('./images/cursor2.png'), auto;
     font-family: 'Playfair Display', serif;
 }
   
@@ -215,6 +217,7 @@ h1, h2, h3 {
     font-weight: 400;
     font-style: normal;
 }
+
   
   
   
@@ -237,6 +240,7 @@ h1, h2, h3 {
 }
 
 .tips {
+    cursor: url('./imagenes/cursor2.png'), pointer; /* Usar cursor personalizado en la sección */
     min-height: 500px;
     padding: 30px;
 }
