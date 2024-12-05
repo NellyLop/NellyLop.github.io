@@ -44,7 +44,6 @@
     margin: 20px;
 }
 
-
 .about-me {
     height: 500px;
     padding: 10px;
@@ -161,7 +160,7 @@
     opacity: 0.2;
 }
 
-.proyecto:hover .overlay{
+.proyecto:hover .overlay {
     opacity: 1;
 }
 
@@ -173,14 +172,54 @@ section {
     justify-content: center;    
 }
 
-
-.myclass-main h1 {
-    font-family: 'Georgia', 'Palatino Linotype', 'Times New Roman', serif; /* Usamos una fuente serif elegante */
-    font-size: 3.5rem; /* Tamaño de fuente para h1 */
-    font-weight: bold; /* Hacer la fuente más gruesa */
-    letter-spacing: 2px; /* Espaciado entre letras para dar un toque más elegante */
-    color: #3F3D56; /* Color que complementa bien la tipografía */
+h1 {
+    font-size: 2.5rem;
 }
+
+/* Aplica Playfair Display a todo el cuerpo de la página */
+body {
+    font-family: 'Playfair Display', serif;
+}
+  
+/* Aplica un estilo específico para encabezados */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Agregamos el nuevo código CSS */
+.playfair-display-extra {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/*Agrgar otro estilo*/
+
+.yuji-mai-regular {
+    font-family: "Yuji Mai", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.spicy-rice-regular {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.architects-daughter-regular {
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  
+  
+  
+  
 
 .btn-info {
     background-color: #2F2E41;
@@ -363,7 +402,6 @@ footer {
     padding: 20px;
 }
 
-
 /* Responsive */
 
 @media screen and (max-width: 400px) {
@@ -385,7 +423,6 @@ footer {
     .navbar-brand {
         display: none;
     }
-    
 }
 
 @media screen and (max-width: 800px) {
