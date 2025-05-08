@@ -55,6 +55,11 @@
 </head>
 <body>
 
+    <div id="mensaje-bienvenida" style="display:none; background: #f0f8ff; text-align: center; padding: 10px;">
+        ¡Bienvenido a mi sitio! ✨
+      </div>
+      
+
     <!-- NavBar -->
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
@@ -90,7 +95,7 @@
         <div class="myclass-main " >
             <img class="myclass-pic rounded-circle" src="./images/perfil2.png" alt="My selfie">
             <h1 class="playfair-display-extra"> Hola, soy Nely</h1> <!--Tipografia-->
-            <h2> Estudiante de la liceniatura en Informática ❤️</h2>
+            <h2 id="escritura-dinamica"> </h2>
         </div>
         <div class="myclass-label">            
             <img class="myclass-imagen img-fluid" src="./images/undraw_favorite_nvoi.svg" alt="think twice code once">
@@ -373,13 +378,57 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-          $("#btn-contacto").click(function() {
-            $("#mensaje-contacto").fadeToggle(500); // Puedes usar toggleClass("d-none") si prefieres ocultar por completo
-          });
-        });
-      </script>
+
+<script>
+    $(document).ready(function () {
+  
+      // 1. Scroll suave
+      $("a.nav-link").click(function (e) {
+        e.preventDefault();
+        var target = $(this).attr("href");
+        $("html, body").animate({
+          scrollTop: $(target).offset().top - 60
+        }, 800);
+      });
+  
+      // 2. Mensaje de bienvenida
+      $("#mensaje-bienvenida").slideDown(1000).delay(3000).slideUp(1000);
+  
+      // 3. Hover en proyectos
+      $(".proyecto").hover(
+        function () {
+          $(this).css("transform", "scale(1.05)").css("transition", "0.3s");
+        },
+        function () {
+          $(this).css("transform", "scale(1)");
+        }
+      );
+
+            // 5. Animación de texto máquina de escribir
+        const texto = "Estudiante de la licenciatura en Informática ❤️";
+        let i = 0;
+
+        function escribir() {
+        if (i < texto.length) {
+            $("#escritura-dinamica").append(texto.charAt(i));
+            i++;
+            setTimeout(escribir, 70); // velocidad de escritura
+        }
+        }
+
+        escribir();
+
+  
+      // 4. Contacto toggle (ya lo tienes)
+      $("#btn-contacto").click(function () {
+        $("#mensaje-contacto").fadeToggle(500);
+      });
+  
+    });
+  </script>
+
+
+  
 
     <!-- Bootstrap JS offline -->
     <script src="./js/bootstrap.min.js"></script>    
