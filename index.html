@@ -54,6 +54,7 @@
 
 </head>
 <body>
+
     <!-- NavBar -->
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
@@ -111,8 +112,7 @@
             </p>
         </div>
     </section>
-
-
+    
     <!-- Experience -->
     <section class="experiencia section-clara">
         <div class="container text-center">
@@ -338,12 +338,12 @@
                     <div class="col-12 col-md-4 seccion-titulo">
                         ¡No dudes en contactarme!
                     </div>
-                    <div class="col-12 col-md-4 description">
+                    <div id="mensaje-contacto" class="col-12 col-md-4 description">
                         Estoy aquí para compartir ideas y aprender de ti.
                     </div>
                     <div class="col-12 col-md-4">
                         <a href="mailto:lnely273@gmail.com">
-                            <button type="button">
+                            <button id="btn-contacto" type="button">
                                 Contacto
                                 <i class="bi-envelope-check"></i>
                             </button>
@@ -369,7 +369,17 @@
             </a>
         </div>
         <div class="author"> NellyLop (2024) &#169; </div>
+        
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $("#btn-contacto").click(function() {
+            $("#mensaje-contacto").fadeToggle(500); // Puedes usar toggleClass("d-none") si prefieres ocultar por completo
+          });
+        });
+      </script>
 
     <!-- Bootstrap JS offline -->
     <script src="./js/bootstrap.min.js"></script>    
